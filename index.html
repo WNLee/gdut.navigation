@@ -1,89 +1,294 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Gdut.navigation : Gdut Navigation" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Gdut.navigation</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Geek-Lee/gdut.navigation">View on GitHub</a>
-
-          <h1 id="project_title">Gdut.navigation</h1>
-          <h2 id="project_tagline">Gdut Navigation</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Geek-Lee/gdut.navigation/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Geek-Lee/gdut.navigation/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Gdut.navigation maintained by <a href="https://github.com/Geek-Lee">Geek-Lee</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("http://geek-lee.github.io/gdut.navigation.com");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
+<!DOCTYPE HTML>
+<!--[if IE 9]><html class="ie9 lte9 no-css3" lang="zh-cn"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9)  ]><!--><html class='no-ie' lang="zh-cn"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="..." />
+		<meta name="keywords" content="..." />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>GDUT NAVIGATION</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.min.css" />
+		<link rel="stylesheet" type="text/css" href="styles/header-footer.css" />
+		<link rel="stylesheet" type="text/css" href="styles/index.css" />
+		<script type="text/javascript" src="scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/jQueryRotate.js"></script>
+		<script type="text/javascript" src="scripts/index.js"></script>
+		<script type="text/javascript">
+		(function($){
+			$(function(){
+				browers();
+				_navHover();
+				_leftBar();
+				_linkHover();
+				_linkSilbe();
+				_roundAnimate();
+				_secLinkHover();
+			});
+		})(jQuery);
+	</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-wrap">
+					<a href="#" id="logo"></a>
+					<h1 id="title"><a href="#">广工导航 <span> GDUT Navigation</span></a></h1>
+					<nav class="first-nav">
+						<ul>
+							<li><a href="#" title="学习生活 | 资讯平台">实用系统</a></li>
+							<li><a href="#" title="社团协会 | 校级组织 | 学院团学">学习社团</a></li>
+							<li><a href="#" title="科研机构 | 党政机构 | 学院官网">校内设施</a></li>
+							<li></li>
+						</ul>
+					</nav>
+<!-- 					<nav class="second-nav">
+						<p><span>学习生活</span> |
+						<span>资讯平台</span></p>
+						<p><span>社团协会</span> |
+						<span>校级组织</span> |
+						<span>学院团学</span></p>
+						<p><span>科研机构</span> |
+						<span>党政机构</span> |
+						<span>学院官网</span></p>
+					</nav> -->
+				</div>
+			</header>
+			<div class="main">
+				<div class="main-content">
+					<div id="list">
+						<p id="location">当前位置<span id="first-locat">实用系统</span>>><span id="second-locat">学习生活</span></p>
+						<span class="line"></span>
+						<div id="list-content">
+							<div class="list-00">
+								<p class="link-hover"><span><a href="#" class="text">广</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 1 -->
+							<div class="list-01">
+								<p class="link-hover"><span><a href="#" class="text">广工</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 2 -->
+							<div class="list-10">
+								<p class="link-hover"><span><a href="#" class="text">广工人</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 3 -->
+							<div class="list-11">
+								<p class="link-hover"><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 4 -->
+							<div class="list-12">
+								<p class="link-hover"><span><a href="#" class="text">广工人自己</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 5 -->
+							<div class="list-20">
+								<p class="link-hover"><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 6 -->
+							<div class="list-21">
+								<p class="link-hover"><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 7 -->		
+							<div class="list-22">
+								<p class="link-hover"><span><a href="#" class="text">广工人自己的导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+								<p><span><a href="#" class="text">广工人自</a></span></p>
+							</div><!-- 8 -->																		
+						</div>
+						<span class="line"></span>
+						<p id="btn-contain"><span id="next"></span><span id="prev"></span></p>
+					</div>
+					<div id="decoration">
+						<div id="cloud01"></div>
+						<div id="cloud02"></div>
+						<div id="round-container"  class="img">
+							<div id="round" ></div>
+							<div id="apple">
+								<div class="s1"></div>
+								<div class="s2"></div>
+							</div>
+							<div id="banana">
+								<div class="s3"></div>
+								<div class="s4"></div>
+								<div class="s5"></div>
+							</div>
+							<div id="pear">
+								<div class="s6"></div>
+								<div class="s7"></div>
+								<div class="s8"></div>
+							</div>
+							<div class="t1 t1-hover" title="学习生活"></div>
+							<div class="t2 t2-hover" title="资讯平台"></div>
+							<div class="t3" title="社团协会"></div>
+							<div class="t4" title="校级组织"></div>
+							<div class="t5" title="学院团学"></div>
+							<div class="t6" title="科研机构"></div>
+							<div class="t7" title="党政机构"></div>
+							<div class="t8" title="学院官网"></div>
+						</div>
+					</div>
+					<div id="left-bar">
+						<div class="left-bar-content">
+							<h4>常用链接</h4>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer-wrap">
+					<p><a href="#">新生专题网 | 专属广工新生的第一站</a></p>
+					<p><a href="#">工大书架 | 在这里，我们传承的不仅仅是书本</a></p>
+					<p><a href="#">广工导航 | 广工人自己的导航</a></p>
+					<p><a href="#">工大选修 | 广工人的选修课指南</a></p>
+					<p>Copyright © 2013 Product of Vtmer 维生数工作室</p>
+					<p><a href="#">关于我们</a>  <a href="#">联系我们</a></p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
+<!-- 							<p class="link-hover"><span><a href="#" class="text">广工人自己的导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p>
+							<p><span><a href="#" class="text">广工人自己的导航导航</a></span></p> -->
