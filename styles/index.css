@@ -132,6 +132,11 @@
 	top: 30px;
 	left: 85px;
 } 
+.main-content #left-bar #left-bar-link {
+	margin: 0 0 0 20px;
+	width: 124px;
+	height: 180px;
+}
 .main-content #left-bar .left-bar-content h4 {
 	margin: 8px 0 6px 20px;
 	font-size: 12px;
@@ -422,26 +427,3 @@
   	transition: all .3s ease-in-out ;
 	cursor: pointer;
 }
-
-
-
-/*#decoration .img {
-	-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
-	-webkit-transform: rotate(1deg);
-	-moz-transform: rotate(1deg);
-	-o-transform: rotate(1deg);
-	transform: rotate(1deg);
-}
-#decoration .imgHover {
-	-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
-	-webkit-transform: rotate(-1185deg);
-	-moz-transform: rotate(-1185deg);
-	-o-transform: rotate(-1185deg);
-	transform: rotate(-1185deg);
-}*/
