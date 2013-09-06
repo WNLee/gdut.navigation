@@ -6,15 +6,12 @@
 		<meta name="description" content="..." />
 		<meta name="keywords" content="..." />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>GDUT NAVIGATION</title>
+        <title>GDUT NAVIGATION</title>
+        <!-- build:css styles/style.css -->
 		<link rel="stylesheet" type="text/css" href="styles/reset.min.css" />
 		<link rel="stylesheet" type="text/css" href="styles/header-footer.css" />
-		<link rel="stylesheet" type="text/css" href="styles/index.css" />
-		<script type="text/javascript" src="scripts/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/jQueryRotate.js"></script>
-		<script type="text/javascript" src="scripts/data.js"></script>
-		<script type="text/javascript" src="scripts/animate.js"></script>
-		<script type="text/javascript" src="scripts/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <!-- endbuild -->
 	</head>
 	<body>
 		<div class="wrap">
@@ -38,22 +35,7 @@
 						<p id="location">当前位置<span id="first-locat">实用系统</span>>><span id="second-locat">学习生活</span></p>
 						<span class="line"></span>
 						<div id="list-content">
-							<div class="list-00" data-animate="fadeOutIn">
-							</div><!-- 1 -->
-							<div class="list-01" data-animate="fadeOutIn">
-							</div><!-- 2 -->
-							<div class="list-10" data-animate="fadeOutIn">
-							</div><!-- 3 -->
-							<div class="list-11" data-animate="fadeOutIn">
-							</div><!-- 4 -->
-							<div class="list-12" data-animate="fadeOutIn">
-							</div><!-- 5 -->
-							<div class="list-20" data-animate="fadeOutIn">
-							</div><!-- 6 -->
-							<div class="list-21" data-animate="fadeOutIn">
-							</div><!-- 7 -->		
-							<div class="list-22" data-animate="fadeOutIn">
-							</div><!-- 8 -->																		
+							<div class="list" data-animate="fadeOutIn"></div>
 						</div>
 						<span class="line"></span>
 						<p id="btn-contain"><span id="next"></span><span id="prev"></span></p>
@@ -77,14 +59,14 @@
 								<div class="s7"></div>
 								<div class="s8"></div>
 							</div>
-							<div class="t1 t1-hover" title="学习生活" data-type = "stdLife"></div>
-							<div class="t2 t2-hover" title="资讯平台" data-type = "infoPlat"></div>
-							<div class="t3" title="社团协会" data-type = "organ"></div>
-							<div class="t4" title="校级组织" data-type = "tissue"></div>
-							<div class="t5" title="学院团学" data-type = "college"></div>
-							<div class="t6" title="科研机构" data-type = "inst"></div>
-							<div class="t7" title="党政机构" data-type = "party"></div>
-							<div class="t8" title="学院官网" data-type = "website"></div>
+							<div class="t t1 t1-hover" title="学习生活" data-type = "stdLife"></div>
+							<div class="t t2 t2-hover" title="资讯平台" data-type = "infoPlat"></div>
+							<div class="t t3" title="社团协会" data-type = "organ"></div>
+							<div class="t t4" title="校级组织" data-type = "tissue"></div>
+							<div class="t t5" title="学院团学" data-type = "college"></div>
+							<div class="t t6" title="科研机构" data-type = "inst"></div>
+							<div class="t t7" title="党政机构" data-type = "party"></div>
+							<div class="t t8" title="学院官网" data-type = "website"></div>
 						</div>
 					</div>
 					<div id="left-bar">
@@ -102,12 +84,13 @@
 					<p><a href="#">工大书架 | 在这里，我们传承的不仅仅是书本</a></p>
 					<p><a href="#">广工导航 | 广工人自己的导航</a></p>
 					<p><a href="#">工大选修 | 广工人的选修课指南</a></p>
-					<p>Copyright © 2013 Product of Vtmer 维生数工作室</p>
+					<p>Copyright &copy; 2013 Product of Vtmer 维生数工作室</p>
 					<p><a href="#">关于我们</a>  <a href="#">联系我们</a></p>
 				</div>
 			</footer>
 		</div>
-	</body>
-	<script type="text/javascript" src="scripts/animate.js"></script>
-	<script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+    <!-- build:js scripts/main.js -->
+    <script data-main="scripts/app" src="bower_components/requirejs/require.js"></script>
+    <!-- endbuild -->
 </html>
