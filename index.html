@@ -6,15 +6,14 @@
 		<meta name="description" content="..." />
 		<meta name="keywords" content="..." />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>GDUT NAVIGATION</title>
+		<title>GDUT Navigation</title>
 		<link rel="stylesheet" type="text/css" href="styles/reset.min.css" />
 		<link rel="stylesheet" type="text/css" href="styles/header-footer.css" />
 		<link rel="stylesheet" type="text/css" href="styles/index.css" />
-		<script type="text/javascript" src="scripts/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/jQueryRotate.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="scripts/https://jqueryrotate.googlecode.com/files/jQueryRotate.js"></script>
 		<script type="text/javascript" src="scripts/data.js"></script>
-		<script type="text/javascript" src="scripts/animate.js"></script>
-		<script type="text/javascript" src="scripts/index.js"></script>
+		<script type="text/javascript" src="scripts/models.js"></script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -24,9 +23,9 @@
 					<h1 id="title"><a href="#">广工导航 <span> GDUT Navigation</span></a></h1>
 					<nav class="first-nav">
 						<ul>
-							<li><a href="#" data-animation="rotateOne" title="学习生活 | 资讯平台">实用系统</a></li>
-							<li><a href="#" data-animation="rotateTwo" title="社团协会 | 校级组织 | 学院团学">学习社团</a></li>
-							<li><a href="#" data-animation="rotateThree" title="科研机构 | 党政机构 | 学院官网">校内设施</a></li>
+							<li><a href="#" data-animation="rotateOne" data-site="utility" title="学习生活 | 资讯平台" class="choosed">实用系统</a></li>
+							<li><a href="#" data-animation="rotateTwo" data-site="Learning" title="社团协会 | 校级组织 | 学院团学">学习社团</a></li>
+							<li><a href="#" data-animation="rotateThree" data-site="facilities" title="科研机构 | 党政机构 | 学院官网">校内设施</a></li>
 							<li></li>
 						</ul>
 					</nav>
@@ -35,25 +34,9 @@
 			<div class="main">
 				<div class="main-content">
 					<div id="list">
-						<p id="location">当前位置<span id="first-locat">实用系统</span>>><span id="second-locat">学习生活</span></p>
+						<p id="location">当前位置<span id="first-locat">实用系统</span>&gt;&gt;<span id="second-locat">学习生活</span></p>
 						<span class="line"></span>
-						<div id="list-content">
-							<div class="list-00" data-animate="fadeOutIn">
-							</div><!-- 1 -->
-							<div class="list-01" data-animate="fadeOutIn">
-							</div><!-- 2 -->
-							<div class="list-10" data-animate="fadeOutIn">
-							</div><!-- 3 -->
-							<div class="list-11" data-animate="fadeOutIn">
-							</div><!-- 4 -->
-							<div class="list-12" data-animate="fadeOutIn">
-							</div><!-- 5 -->
-							<div class="list-20" data-animate="fadeOutIn">
-							</div><!-- 6 -->
-							<div class="list-21" data-animate="fadeOutIn">
-							</div><!-- 7 -->		
-							<div class="list-22" data-animate="fadeOutIn">
-							</div><!-- 8 -->																		
+						<div id="list-content">	
 						</div>
 						<span class="line"></span>
 						<p id="btn-contain"><span id="next"></span><span id="prev"></span></p>
@@ -77,20 +60,26 @@
 								<div class="s7"></div>
 								<div class="s8"></div>
 							</div>
-							<div class="t1 t1-hover" title="学习生活" data-type = "stdLife"></div>
-							<div class="t2 t2-hover" title="资讯平台" data-type = "infoPlat"></div>
-							<div class="t3" title="社团协会" data-type = "organ"></div>
-							<div class="t4" title="校级组织" data-type = "tissue"></div>
-							<div class="t5" title="学院团学" data-type = "college"></div>
-							<div class="t6" title="科研机构" data-type = "inst"></div>
-							<div class="t7" title="党政机构" data-type = "party"></div>
-							<div class="t8" title="学院官网" data-type = "website"></div>
+							<div class="group">
+								<div class="t1 viewOn viewChoose" title="学习生活" data-type = "stdLife"></div>
+								<div class="t2 viewOn" title="资讯平台" data-type = "infoPlat"></div>
+							</div>
+							<div class="group">
+								<div class="t3 viewChoose" title="社团协会" data-type = "organ"></div>
+								<div class="t4" title="校级组织" data-type = "tissue"></div>
+								<div class="t5" title="学院团学" data-type = "college"></div>
+							</div>
+							<div class="group">
+								<div class="t6 viewChoose" title="科研机构" data-type = "inst"></div>
+								<div class="t7" title="党政机构" data-type = "party"></div>
+								<div class="t8" title="学院官网" data-type = "website"></div>
+							</div>
 						</div>
 					</div>
-					<div id="left-bar">
-						<div class="left-bar-content">
+					<div id="right-bar">
+						<div class="right-bar-content">
 							<h4>常用链接</h4>
-							<div id="left-bar-link" data-type = "comLink">
+							<div id="right-bar-link" data-type = "comLink">
 							</div>
 						</div>
 					</div>
@@ -102,12 +91,27 @@
 					<p><a href="#">工大书架 | 在这里，我们传承的不仅仅是书本</a></p>
 					<p><a href="#">广工导航 | 广工人自己的导航</a></p>
 					<p><a href="#">工大选修 | 广工人的选修课指南</a></p>
-					<p>Copyright © 2013 Product of Vtmer 维生数工作室</p>
+					<p>Copyright &copy; 2013 Product of Vtmer 维生数工作室</p>
 					<p><a href="#">关于我们</a>  <a href="#">联系我们</a></p>
 				</div>
 			</footer>
 		</div>
+	<!--[if lt IE 10]>
+	<div class="attention">
+		<h1>广工导航</h1>
+		<div id="atten-content">
+			<p class="sry">We are so sorry, but……</p>
+			<p class="explain">你的浏览器版本过低，无法查看这个页面!快升级你的浏览器吧!</p>
+			<p class="explain">如果你使用的是360浏览器或搜狗浏览器，切换到<span>高速模式</span>就可以看到啦！</p>
+			<div class="rec">
+				<h4>推荐浏览器</h4>
+				<p><span class="brss chr"><a href="http://www.google.com/chrome" target="_blank" title="谷歌浏览器">谷歌浏览器</a></span>
+				<span class="brss fir"><a href="http://firefox.com.cn/download/" target="_blank" title="火狐浏览器">火狐浏览器</a></span></p>
+			</div>
+		</div>
+	</div>
+	<div id="bgc"></div>
+	<![endif]-->
 	</body>
-	<script type="text/javascript" src="scripts/animate.js"></script>
 	<script type="text/javascript" src="scripts/index.js"></script>
 </html>
