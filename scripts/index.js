@@ -111,6 +111,7 @@ util.navClick = function(){
 		$('#second-locat').text($('.viewChoose').eq(ind).attr('title')); // 修改面包屑二级位置
 		navData.setDom($el, da); // dom 操作
 		util.navHover($(this).parent('li').index()); // 点击后改变 导航 hover 元素的起始位置
+		return false;
 	});
 	$tAry.live('click', function(){
 		var da = navData.getData($(this).eq(0),'data-type','typeOne'); // 加载 url
