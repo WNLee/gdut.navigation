@@ -1,28 +1,28 @@
 var oNavURL = {
 	"stdLife": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网官',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
 					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
+				},	
+				{
+					name:'广东工业大学官网',
+					hr:'http://www.gdut.edu.cn/',
+					disc:'广东工业大学官网'
 				},				
 				{
 					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},				
 				{
 					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
-				},				
-				{
-					name:'广东工业大学官网',
-					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
 					name:'广东工业大学官网',
@@ -30,122 +30,122 @@ var oNavURL = {
 					disc:'广东工业大学官网'
 				}],
 	"infoPlat": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"organ": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"tissue": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"college": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"inst": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"party": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"website": [{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网官网官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}],
 	"comLink": [{
 					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
-					disc:'广东工业大学官网',
+					disc:'广东工业大学官网'
 				},
 				{
-					name:'广东工业大学官网官网官网官网官网官网官网',
+					name:'广东工业大学官网',
 					hr:'http://www.gdut.edu.cn/',
 					disc:'广东工业大学官网'
 				}]
