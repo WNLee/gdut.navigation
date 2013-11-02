@@ -1,7 +1,7 @@
 /**
  * ==UserScript==
  * @name       GDUT Navigation
- * @github     https://github.com/Geek-Lee/gdut.navigation.git
+ * @link       http://geek-lee.github.io/gdut.navigation
  * @version    0.1.0
  * @description  Summary GDUT Navigation
  * @copyright    2012-2013, Vtmer
