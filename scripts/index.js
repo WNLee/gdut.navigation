@@ -1,5 +1,5 @@
 /**
- * ==UserScript==
+ *
  * @name       GDUT Navigation
  * @link       http://geek-lee.github.io/gdut.navigation
  * @version    0.1.0
@@ -7,7 +7,6 @@
  * @copyright    2012-2013, Vtmer
  * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
  * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
- * ==/UserScript==
  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
