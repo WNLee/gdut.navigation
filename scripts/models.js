@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
  * 
  * @name       GDUT Navigation
  * @link       http://geek-lee.github.io/gdut.navigation
@@ -7,10 +8,11 @@
  * @copyright    2012-2013, Vtmer
  * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
  * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
+=======
+ *  models.js
+>>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- ** DataURL 是一个用于数据加载、DOM操作的原型
+ *  DataURL 是一个用于数据加载、DOM操作的原型
  *
  *  data 属性指向传入的数据，数据应为 JSON 格式
  *
@@ -39,23 +41,23 @@
  *  eBind 方法为二级菜单项绑定事件触发动画效果
  ** 
  */
-function DataURL(data){
+function DataURL(data) {
 	this.data = data;
 	this.sHTML = {
 		typeOne:function(ops){
-			return '<p><span><a href='+ops.hr+' title='
-					+ops.disc+' class="text">'+ops.name+'</a></span></p>';
+			return '<p><span><a href='+ops.hr+' title=' +
+					ops.disc+' class="text">'+ops.name+'</a></span></p>';
 		},
 		typeTwo:function(ops){
-			return '<p><span><a href='+ops.hr+' title='
-					+ops.disc+' class="text" data-spec=true>'+ops.name+'</a></span></p>';
+			return '<p><span><a href='+ops.hr+' title=' +
+					ops.disc+' class="text" data-spec=true>'+ops.name+'</a></span></p>';
 		}
 	};
 }
-DataURL.prototype.getData = function( $Elem, sDataType, htmType){
+DataURL.prototype.getData = function( $Elem, sDataType, htmType) {
 	var DataType = this.data[$Elem.attr(sDataType)],
-		htmType = htmType || 'typeOne',
-		htm = "";
+            htm = "";
+	htmType = htmType || 'typeOne',
 	for (var i = 0, len = DataType.length; i < len; i++) {
 		htm += this.sHTML[htmType](DataType[i]);
 	}
@@ -84,7 +86,7 @@ oNav.prototype = {
 		that.sTitle.each(function(){
 			var $this = $(this);
 			setTimeout(function(){$this.addClass('viewOn')
-				.css({'top': parseInt($this.css('top')) - that.tp,'opacity':1});
+				.css({'top': parseInt($this.css('top'), 10) - that.tp,'opacity':1});
 			},300);
 		});
 	},
@@ -92,17 +94,17 @@ oNav.prototype = {
 		var that = this;
 		that.sTitle.each(function(){
 			$(this).removeClass('viewOn')
-				.css({'top': parseInt($(this).css('top')) + that.tp,'opacity':0});
+				.css({'top': parseInt($(this).css('top'), 10) + that.tp,'opacity':0});
 		});
 	},
 	sTitleUD: function(){
 		var that = this;
 		that.sTitle.each(function(){
 			if (!$(this).is('animated')){
-				$(this).css({'top': parseInt($(this).css('top')) + that.tp,'opacity':0});
+				$(this).css({'top': parseInt($(this).css('top'), 10) + that.tp,'opacity':0});
 				var $this = $(this);
 				setTimeout(function(){	
-					$this.css({'top': parseInt($this.css('top')) - that.tp,'opacity':1});
+					$this.css({'top': parseInt($this.css('top'), 10) - that.tp,'opacity':1});
 				}, 600);
 			}
 		});
@@ -120,8 +122,8 @@ oNav.prototype = {
 				$this.addClass('choosed');	
 				$('.viewOn').each(function(){
 					$(this).removeClass('viewOn')
-						.css({'top': parseInt($(this).css('top')) 
-							+ that.tp,'opacity':0});
+						.css({'top': parseInt($(this).css('top'), 10) + 
+							that.tp,'opacity':0});
 				});
 				that.sTitleUp();
 			}
