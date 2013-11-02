@@ -1,23 +1,8 @@
 /**
-<<<<<<< HEAD
- * ==UserScript==
- * @name       GDUT Navigation
- * @link       http://geek-lee.github.io/gdut.navigation
- * @version    0.1.0
- * @description  Summary GDUT Navigation
- * @copyright    2012-2013, Vtmer
- * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
- * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
- * ==/UserScript==
  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- ** DataURL 是一个用于数据加载、DOM操作的原型
-=======
  *  models.js
  *
  *  DataURL 是一个用于数据加载、DOM操作的原型
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
  *
  *  data 属性指向传入的数据，数据应为 JSON 格式
  *
@@ -29,7 +14,7 @@
  *  setDom 方法接收两个参数，分别为 Jq 对象(object)，数组
  *      作用是将 getData 返回的数组插到页面中
  *
- ** oNav 是实现菜单效果的原型
+ *  oNav 是实现菜单效果的原型
  *
  *	原型接收5个参数，4个Jq对象(object)、一个数值；firstNav,secondNav,sTitle,ss,tp，angle
  *      分别存放二级菜单项，插图动画块，二级菜单组，插图动画块集合，二级菜单项移动像素值，
@@ -44,9 +29,9 @@
  *	sTitleUD 方法实现二级菜单项上升下降的动画效果，作用于 eBind
  *
  *  eBind 方法为二级菜单项绑定事件触发动画效果
- ** 
+ *
  */
-<<<<<<< HEAD
+ 
 function DataURL(data){
 	this.data = data;
 	this.sHTML = {

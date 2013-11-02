@@ -1,19 +1,6 @@
 /**
-<<<<<<< HEAD
- * ==UserScript==
- * @name       GDUT Navigation
- * @link       http://geek-lee.github.io/gdut.navigation
- * @version    0.1.0
- * @description  Summary GDUT Navigation
- * @copyright    2012-2013, Vtmer
- * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
- * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
- * ==/UserScript==
  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-=======
  * index.js
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
  *
  * util 是全局变量，用在命名空间
  *
@@ -27,19 +14,12 @@
  *
  * dataInit() 是数据初始化的方法
  *
-<<<<<<< HEAD
- * IsBrowser() 是浏览器型号和版本的判断方法
-=======
  * isBrowser() 是浏览器型号和版本的判断方法
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
  *
  * init() 是页面初始化方法
  *
  */
-<<<<<<< HEAD
-=======
 
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 var util = {};
 util.rightBar = function(){
 	// .hover() 使鼠标移到 right-bar 弹开，移出  right-bar 收回
