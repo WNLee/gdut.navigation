@@ -1,15 +1,5 @@
 /**
- * ==UserScript==
- * @name       GDUT Navigation
- * @link       http://geek-lee.github.io/gdut.navigation
- * @version    0.1.0
- * @description  Summary GDUT Navigation
- * @copyright    2012-2013, Vtmer
- * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
- * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
- * ==/UserScript==
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * index.js
  *
  * util 是全局变量，用在命名空间
  *
@@ -23,11 +13,12 @@
  *
  * dataInit() 是数据初始化的方法
  *
- * IsBrowser() 是浏览器型号和版本的判断方法
+ * isBrowser() 是浏览器型号和版本的判断方法
  *
  * init() 是页面初始化方法
  *
  */
+
 var util = {};
 util.rightBar = function(){
 	// .hover() 使鼠标移到 right-bar 弹开，移出  right-bar 收回
@@ -52,8 +43,8 @@ util.linkHover = function() {
 util.linkSible = function() {
 	$('.text').hover(function(){
 		var $this = $(this),
-		    offWidth = $this.width(), // 获取链接的宽度
-		    data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
+                    offWidth = $this.width(), // 获取链接的宽度
+                    data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
 		if(offWidth > data) {
 			$(this)
 			.stop()
@@ -61,8 +52,8 @@ util.linkSible = function() {
 		}
 	},function(){
 		var $this = $(this),
-		    offWidth = $this.width(),
-		    data = $this.attr('data-spec') ? 84 : 140;
+                    offWidth = $this.width(),
+                    data = $this.attr('data-spec') ? 84 : 140;
 		if(offWidth > data) {
 			$(this)
 			.stop()
@@ -133,37 +124,48 @@ util.dataInit = function() {
 	navData.setDom($lArray.eq(0),da);	
 	navData.setDom($('#right-bar-link'),navData.getData($('#right-bar-link'),'data-type','typeTwo'));
 };
-util.IsBrowser = function() {
-	var Sys = {};
-	var ua = navigator.userAgent.toLowerCase();
-	var s;
-	(s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : // ie
-	(s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : // firefox
-	(s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : 0; // chrom
+util.isBrowser = function() {
+	var Sys = {},
+            ua = navigator.userAgent.toLowerCase(),
+            s,
+            version;
 
-	if(Sys.ie){
-		if(navigator.userAgent.indexOf("MSIE 6.0")>0||navigator.userAgent.indexOf("MSIE 8.0")>0){
+        if ((s = ua.match(/msie ([\d.]+)/))) {
+            Sys.ie = s[1];
+        } else if ((s = ua.match(/firefox\/([\d.]+)/))) {
+            Sys.firefox = s[1];
+        } else if ((s = ua.match(/chrome\/([\d.]+)/))) {
+            Sys.chrome = s[1];
+        }
+
+	if (Sys.ie) {
+		if(navigator.userAgent.indexOf("MSIE 6.0")>0 ||
+                   navigator.userAgent.indexOf("MSIE 8.0")>0) {
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	} 
-	if(Sys.firefox) {
-		var version = (navigator.appVersion).substring(navigator.appVersion.indexOf(":")
-			,navigator.appVersion.indexOf("."));
-		if(parseInt(version)<4){
+	if (Sys.firefox) {
+		version = navigator.appVersion.substring(
+                            navigator.appVersion.indexOf(":"),
+                            navigator.appVersion.indexOf(".")
+                          );
+		if (parseInt(version, 10) < 4) {
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	}
-	if(Sys.chrome){
-		var version = (navigator.appVersion).substring(navigator.appVersion.indexOf(":")
-			,navigator.appVersion.indexOf("."));
-		if(parseInt(version)<4){
+	if (Sys.chrome) {
+		version = navigator.appVersion.substring(
+                            navigator.appVersion.indexOf(":"),
+                            navigator.appVersion.indexOf(".")
+                          );
+		if (parseInt(version, 10) < 4) {
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	}
-}
+};
 util.init = function() {
 	// 加载各方法
 	util.dataInit();
@@ -172,7 +174,7 @@ util.init = function() {
 	util.navClick();
 	util.linkHover();
 	util.linkSible();
-	// util.IsBrowser();
+	// util.isBrowser();
 };
 (function(){
 	$(function(){
