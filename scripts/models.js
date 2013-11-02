@@ -31,25 +31,7 @@
  *  eBind 方法为二级菜单项绑定事件触发动画效果
  *
  */
- 
-function DataURL(data){
-	this.data = data;
-	this.sHTML = {
-		typeOne:function(ops){
-			return '<p><span><a href='+ops.hr+' title='
-					+ops.disc+' class="text">'+ops.name+'</a></span></p>';
-		},
-		typeTwo:function(ops){
-			return '<p><span><a href='+ops.hr+' title='
-					+ops.disc+' class="text" data-spec=true>'+ops.name+'</a></span></p>';
-		}
-	};
-}
-DataURL.prototype.getData = function( $Elem, sDataType, htmType){
-	var DataType = this.data[$Elem.attr(sDataType)],
-		htmType = htmType || 'typeOne',
-		htm = "";
-=======
+
 function DataURL(data) {
 	this.data = data;
 	this.sHTML = {
@@ -65,9 +47,8 @@ function DataURL(data) {
 }
 DataURL.prototype.getData = function( $Elem, sDataType, htmType) {
 	var DataType = this.data[$Elem.attr(sDataType)],
-            htm = "";
-	htmType = htmType || 'typeOne',
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
+		htm = "",
+		htmType = htmType || 'typeOne';
 	for (var i = 0, len = DataType.length; i < len; i++) {
 		htm += this.sHTML[htmType](DataType[i]);
 	}
@@ -96,11 +77,7 @@ oNav.prototype = {
 		that.sTitle.each(function(){
 			var $this = $(this);
 			setTimeout(function(){$this.addClass('viewOn')
-<<<<<<< HEAD
-				.css({'top': parseInt($this.css('top')) - that.tp,'opacity':1});
-=======
 				.css({'top': parseInt($this.css('top'), 10) - that.tp,'opacity':1});
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 			},300);
 		});
 	},
@@ -108,28 +85,17 @@ oNav.prototype = {
 		var that = this;
 		that.sTitle.each(function(){
 			$(this).removeClass('viewOn')
-<<<<<<< HEAD
-				.css({'top': parseInt($(this).css('top')) + that.tp,'opacity':0});
-=======
 				.css({'top': parseInt($(this).css('top'), 10) + that.tp,'opacity':0});
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 		});
 	},
 	sTitleUD: function(){
 		var that = this;
 		that.sTitle.each(function(){
 			if (!$(this).is('animated')){
-<<<<<<< HEAD
-				$(this).css({'top': parseInt($(this).css('top')) + that.tp,'opacity':0});
-				var $this = $(this);
-				setTimeout(function(){	
-					$this.css({'top': parseInt($this.css('top')) - that.tp,'opacity':1});
-=======
 				$(this).css({'top': parseInt($(this).css('top'), 10) + that.tp,'opacity':0});
 				var $this = $(this);
 				setTimeout(function(){	
 					$this.css({'top': parseInt($this.css('top'), 10) - that.tp,'opacity':1});
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 				}, 600);
 			}
 		});
@@ -147,13 +113,8 @@ oNav.prototype = {
 				$this.addClass('choosed');	
 				$('.viewOn').each(function(){
 					$(this).removeClass('viewOn')
-<<<<<<< HEAD
-						.css({'top': parseInt($(this).css('top')) 
-							+ that.tp,'opacity':0});
-=======
 						.css({'top': parseInt($(this).css('top'), 10) + 
 							that.tp,'opacity':0});
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 				});
 				that.sTitleUp();
 			}

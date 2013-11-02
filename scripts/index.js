@@ -44,13 +44,8 @@ util.linkHover = function() {
 util.linkSible = function() {
 	$('.text').hover(function(){
 		var $this = $(this),
-<<<<<<< HEAD
-		    offWidth = $this.width(), // 获取链接的宽度
-		    data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
-=======
-                    offWidth = $this.width(), // 获取链接的宽度
-                    data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
+			offWidth = $this.width(), // 获取链接的宽度
+			data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
 		if(offWidth > data) {
 			$(this)
 			.stop()
@@ -58,13 +53,8 @@ util.linkSible = function() {
 		}
 	},function(){
 		var $this = $(this),
-<<<<<<< HEAD
-		    offWidth = $this.width(),
-		    data = $this.attr('data-spec') ? 84 : 140;
-=======
-                    offWidth = $this.width(),
-                    data = $this.attr('data-spec') ? 84 : 140;
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
+			offWidth = $this.width(),
+			data = $this.attr('data-spec') ? 84 : 140;
 		if(offWidth > data) {
 			$(this)
 			.stop()
@@ -135,18 +125,6 @@ util.dataInit = function() {
 	navData.setDom($lArray.eq(0),da);	
 	navData.setDom($('#right-bar-link'),navData.getData($('#right-bar-link'),'data-type','typeTwo'));
 };
-<<<<<<< HEAD
-util.IsBrowser = function() {
-	var Sys = {};
-	var ua = navigator.userAgent.toLowerCase();
-	var s;
-	(s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : // ie
-	(s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : // firefox
-	(s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : 0; // chrom
-
-	if(Sys.ie){
-		if(navigator.userAgent.indexOf("MSIE 6.0")>0||navigator.userAgent.indexOf("MSIE 8.0")>0){
-=======
 util.isBrowser = function() {
 	var Sys = {},
             ua = navigator.userAgent.toLowerCase(),
@@ -164,50 +142,31 @@ util.isBrowser = function() {
 	if (Sys.ie) {
 		if(navigator.userAgent.indexOf("MSIE 6.0")>0 ||
                    navigator.userAgent.indexOf("MSIE 8.0")>0) {
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	} 
-<<<<<<< HEAD
-	if(Sys.firefox) {
-		var version = (navigator.appVersion).substring(navigator.appVersion.indexOf(":")
-			,navigator.appVersion.indexOf("."));
-		if(parseInt(version)<4){
-=======
 	if (Sys.firefox) {
 		version = navigator.appVersion.substring(
                             navigator.appVersion.indexOf(":"),
                             navigator.appVersion.indexOf(".")
                           );
 		if (parseInt(version, 10) < 4) {
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	}
-<<<<<<< HEAD
-	if(Sys.chrome){
-		var version = (navigator.appVersion).substring(navigator.appVersion.indexOf(":")
-			,navigator.appVersion.indexOf("."));
-		if(parseInt(version)<4){
-=======
 	if (Sys.chrome) {
 		version = navigator.appVersion.substring(
                             navigator.appVersion.indexOf(":"),
                             navigator.appVersion.indexOf(".")
                           );
 		if (parseInt(version, 10) < 4) {
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 			alert("你的浏览器版本太低，请升级你的浏览器");
 			return ;
 		}
 	}
-<<<<<<< HEAD
-}
-=======
 };
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 util.init = function() {
 	// 加载各方法
 	util.dataInit();
@@ -216,18 +175,10 @@ util.init = function() {
 	util.navClick();
 	util.linkHover();
 	util.linkSible();
-<<<<<<< HEAD
-	// util.IsBrowser();
-=======
 	// util.isBrowser();
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
 };
 (function(){
 	$(function(){
 		util.init();
 	});
-<<<<<<< HEAD
 })(jQuery);
-=======
-})(jQuery);
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
