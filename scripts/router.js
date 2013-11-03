@@ -1,18 +1,6 @@
 /**
-<<<<<<< HEAD
  *
- * @name       GDUT Navigation
- * @link       http://geek-lee.github.io/gdut.navigation
- * @version    0.1.0
- * @description  Summary GDUT Navigation
- * @copyright    2012-2013, Vtmer
- * @require http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js
- * @require https://jqueryrotate.googlecode.com/files/jQueryRotate.js
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-=======
  * index.js
->>>>>>> 09318cbf8673f607e20c5d99484de4bffb6649d1
  *
  * util 是全局变量，用在命名空间
  *
@@ -56,8 +44,8 @@ util.linkHover = function() {
 util.linkSible = function() {
 	$('.text').hover(function(){
 		var $this = $(this),
-                    offWidth = $this.width(), // 获取链接的宽度
-                    data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
+			offWidth = $this.width(), // 获取链接的宽度
+			data = $this.attr('data-spec') ? 84 : 140; // 区分链接容量的两种宽度
 		if(offWidth > data) {
 			$(this)
 			.stop()
@@ -65,8 +53,8 @@ util.linkSible = function() {
 		}
 	},function(){
 		var $this = $(this),
-                    offWidth = $this.width(),
-                    data = $this.attr('data-spec') ? 84 : 140;
+			offWidth = $this.width(),
+			data = $this.attr('data-spec') ? 84 : 140;
 		if(offWidth > data) {
 			$(this)
 			.stop()
