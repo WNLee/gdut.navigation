@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="scripts/models.js"></script>
 	</head>
 	<body>
+		<!--[if gte ie 10]><!-->
 		<div class="wrap">
 			<header>
 				<div class="header-wrap">
@@ -96,22 +97,17 @@
 				</div>
 			</footer>
 		</div>
-	<!--[if lt IE 10]>
-	<div class="attention">
-		<h1>广工导航</h1>
-		<div id="atten-content">
-			<p class="sry">We are so sorry, but……</p>
-			<p class="explain">你的浏览器版本过低，无法查看这个页面!快升级你的浏览器吧!</p>
-			<p class="explain">如果你使用的是360浏览器或搜狗浏览器，切换到<span>高速模式</span>就可以看到啦！</p>
-			<div class="rec">
-				<h4>推荐浏览器</h4>
-				<p><span class="brss chr"><a href="http://www.google.com/chrome" target="_blank" title="谷歌浏览器">谷歌浏览器</a></span>
-				<span class="brss fir"><a href="http://firefox.com.cn/download/" target="_blank" title="火狐浏览器">火狐浏览器</a></span></p>
-			</div>
-		</div>
-	</div>
-	<div id="bgc"></div>
-	<![endif]-->
+		<script type="text/javascript" src="scripts/router.js"></script>
+		<!--><![endif]-->
+    	<!--[if lt ie 10]>
+	        <div id="update-tip-layer">
+	            <div id="update-tip">
+	                <a href="http://www.google.cn/chrome" title="Chrome" id="chrome"></a>
+	                <a href="http://www.apple.com.cn/safari/" title="Safari" id="safari"> </a>
+	                <a href="http://www.firefox.com.cn/download/" title="Firefox" id="firefox"> </a>
+	                <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home" title="IE 10" id="ie"></a>
+	            </div>
+	        </div>
+    	<![endif]-->
 	</body>
-	<script type="text/javascript" src="scripts/router.js"></script>
 </html>
